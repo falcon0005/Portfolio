@@ -416,6 +416,7 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 20px 30px;
     width: 100%;
     height: 315px;
@@ -428,12 +429,15 @@ h3{
     color: var(--color-white);
     margin-bottom: 20px;
 }
-.contact-info>p{
+.contact-info p {
+    font-size: 16px;
+    color: var(--text-color-second);
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: var(--color-white);
-    margin-block: 5px;
+    justify-content: center; /* Center the content */
+    gap: 10px; /* Spacing between icon and text */
+    white-space: nowrap; /* Prevent line breaks */
 }
 .contact-info p>i{
     font-size: 18px;
@@ -529,6 +533,12 @@ footer{
     margin-top: 10px;
 }
 
+
+@media (max-width: 600px) {
+    .contact-info p {
+        font-size: 14px; /* Slightly smaller font for mobile */
+    }
+}
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
